@@ -75,8 +75,15 @@ WSGI_APPLICATION = 'covid_zj_webscraping.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=3600)
+DATABASES = {'default':
+                 {"ENGINE":"django.db.backends.postgresql_psycopg2",
+                  "NAME":"d4irptsf08dh6e",
+                  "USER":"awtbpivgudcang",
+                  "PASSWORD":"453ba279f94ec5b2918627ba8aaac6e889e5c818b2ca4e03b6413decb9e523ae",
+                  "HOST":"ec2-3-220-23-212.compute-1.amazonaws.com",
+                  "PORT":"5432"}}
+
+#DATABASES['default'] = dj_database_url.config(conn_max_age=3600)
 
 
 # Password validation

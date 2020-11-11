@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>covidcaseszj</title>
+</head>
+<body>
+<h2>Country</h2>
+{% for Country in countries %}
+<h3>{{Country.name}}</h3>
+<ul>
+    <li>cases:{{Country.cases}}</li>
+    <li>deaths:{{Country.deaths}}</li>
+    <li>recovered:{{Country.recovered}}</li>
+</ul>
+{%endfor%}
+<h2>State</h2>
+{% for State in states %}
+<h3>{{State.name}}</h3>
+<ul>
+    <li>cases:{{State.cases}}</li>
+    <li>deaths:{{State.deaths}}</li>
+    <li>recovered:{{State.recovered}}</li>
+</ul>
+{%endfor%}
+<h2>County</h2>
+{% for County in counties %}
+<h3>{{County.name}}</h3>
+<ul>
+    <li>cases:{{County.cases}}</li>
+    <li>deaths:{{County.deaths}}</li>
+    <li>recovered:{{County.recovered}}</li>
+</ul>
+{%endfor%}
+</body>
+</html>

@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from covidcases.views import index, update
+
 urlpatterns = [
+    path("",index),
+    path("update",update),
     path('admin/', admin.site.urls),
 ]
+
